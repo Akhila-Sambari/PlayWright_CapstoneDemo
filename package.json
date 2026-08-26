@@ -1,0 +1,23 @@
+{
+  "name": "playwright_capstonedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akhila-Sambari/PlayWright_CapstoneDemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Akhila-Sambari/PlayWright_CapstoneDemo/issues"
+  },
+  "homepage": "https://github.com/Akhila-Sambari/PlayWright_CapstoneDemo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.3.0"
+  }
+}
