@@ -10,10 +10,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      USERNAME: ${{ secrets.USERNAME }}
-      PASSWORD: ${{ secrets.PASSWORD }}
-
     steps:
       - uses: actions/checkout@v4
 
@@ -28,6 +24,9 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
+        env:
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
         run: npx playwright test
 
       - uses: actions/upload-artifact@v4
