@@ -2,12 +2,12 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test:
     timeout-minutes: 60
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,8 +25,8 @@ jobs:
 
       - name: Run Playwright tests
         env:
-        USERNAME: ${{ secrets.USERNAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: npx playwright test
 
       - uses: actions/upload-artifact@v4
