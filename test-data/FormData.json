@@ -6,8 +6,7 @@
   "mobile": "9876543210",
   "dob": "26 Aug 2026",
   "subject": "Computer Science",
-  "hobbies": ["Reading", "Music"],
-  "picture": "sample.jpg",
+  "hobbies": "Music",
   "address": "Hyderabad, Telangana",
   "state": "NCR",
   "city": "Delhi"
