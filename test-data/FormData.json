@@ -1,0 +1,14 @@
+{
+  "firstName": "Akhila",
+  "lastName": "Sambari",
+  "email": "akhila.sambari@test.com",
+  "gender": "Female",
+  "mobile": "9876543210",
+  "dob": "26 Aug 2026",
+  "subject": "Computer Science",
+  "hobbies": ["Reading", "Music"],
+  "picture": "sample.jpg",
+  "address": "Hyderabad, Telangana",
+  "state": "NCR",
+  "city": "Delhi"
+}
