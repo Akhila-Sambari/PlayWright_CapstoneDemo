@@ -28,8 +28,6 @@ test('DemoQA Student Registration Form', async ({ page }) => {
     await page.locator('#subjectsInput').fill(formData.subject);
     await page.keyboard.press('Enter');
  
-    // Hobbies
-    await page.getByText(formData.hobbies).click();
  
     // Address
     await page.fill('#currentAddress', formData.address);
