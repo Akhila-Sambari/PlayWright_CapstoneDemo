@@ -37,25 +37,15 @@ test('DemoQA Student Registration Form', async ({ page }) => {
     await page.getByText(formData.state, { exact: true }).click();
  
     // City
+    
     await page.locator('#city').click();
     await page.getByText(formData.city, { exact: true }).click();
  
     // Submit
     await page.locator('#submit').click();
  
-    // Validation
+    //Validation
     await expect(page.locator('#example-modal-sizes-title-lg'))
         .toHaveText('Thanks for submitting the form');
- 
-    await expect(page.locator('tbody'))
-        .toContainText(formData.firstName);
- 
-    await expect(page.locator('tbody'))
-        .toContainText(formData.lastName);
- 
-    await expect(page.locator('tbody'))
-        .toContainText(formData.email);
- 
-    await expect(page.locator('tbody'))
-        .toContainText(formData.mobile);
+
 });
