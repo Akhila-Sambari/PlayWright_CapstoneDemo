@@ -7,9 +7,9 @@ test('DemoQA Student Registration Form', async ({ page }) => {
  
     // Remove ads that may block elements
     await page.evaluate(() => {
-        document.querySelector('#fixedban')?.remove();
-        document.querySelector('footer')?.remove();
-    });
+    document.querySelector('#RightSide_Advertisement')?.remove();
+    document.querySelector('footer')?.remove();
+});
  
     // Name
     await page.fill('#firstName', formData.firstName);
