@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const formData = require('../test-data/formData.json');
+const formData = require('../test-data/FormData.json');
  
 test('DemoQA Student Registration Form', async ({ page }) => {
  
