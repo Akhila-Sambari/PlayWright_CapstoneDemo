@@ -1,10 +1,4 @@
 import { test, expect } from '@playwright/test';
-import dotenv from 'dotenv';
-
-dotenv.config({
-  path: '.env',
-  override: true
-});
 
 test('Login Test', async ({ page }) => {
     await page.goto('https://smarterp-wgaw.onrender.com/');
