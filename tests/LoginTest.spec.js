@@ -7,6 +7,6 @@ test('Login Test', async ({ page }) => {
     await page.fill('#password', process.env.PASSWORD);
     console.log("pwd =", process.env.PASSWORD);
     await page.click('#loginBtn');
-    console.log("Logged in successfully");
+    console.log("Logged in successful");
 
 });
